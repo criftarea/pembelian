@@ -1,14 +1,18 @@
-<?php
+root = true
 
-namespace App\Models;
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+[*.md]
+trim_trailing_whitespace = false
 
-class Mpembelian extends Model
-{
-    use HasFactory;
-    protected $table = 'pembelian';
-    protected $fillable = ['id_pembelian', 'id_barang', 'id_suplier', 'qyt', 'tgl'];
+[*.{yml,yaml}]
+indent_size = 2
 
-}
+[docker-compose.yml]
+indent_size = 4
